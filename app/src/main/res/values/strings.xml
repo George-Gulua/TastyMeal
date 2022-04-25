@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">TastyMeal</string>
+    <string name="log_name">Войти</string>
+    <string name="password">Введите пароль</string>
+    <string name="phone_number">Введите номер телефона</string>
+    <string name="logo_name">TastyMeal</string>
+    <string name="meal_icon">meal</string>
+    <string name="no_account">У вас нет аккаунта?</string>
+    <string name="registr">Зарегистрируйтесь.</string>
+    <string name="registration">Регистрация</string>
+    <string name="rep_password">Подтвердите пароль</string>
+    <string name="registration_button">Зарегистрироваться</string>
+    <string name="back_icon">back</string>
+    <string name="main">Главное</string>
+    <string name="reserve">Резерв</string>
+    <string name="menu">Меню</string>
+    <string name="orders">Заказы</string>
+    <string name="profile">Профиль</string>\
+    <string name="email">Email</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="phone">Телефон</string>
+    <string name="save">Сохранить</string>
+    <string name="logout">Выйти</string>
+    <string name="basket">Корзина</string>
+    <string name="scroll_menu">Скролл меню</string>
+    <string name="scroll_main">Скролл главное</string>
+    <string name="scroll_orders">Скролл заказы</string>
+    <string name="table">Столик №</string>
+    <string name="cicle">окружность</string>
+    <string name="Reserve_date">Дата брони:</string>
+    <string name="about_order">О заказе</string>
+    <string name="Add">Добавить</string>
+    <string name="active_order">Активен</string>
+    <string name="your_order">Ваш заказ</string>
+    <string name="place_an_order">Оформить заказ</string>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/background_menu.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_menu.xml" value="0.134" />
+        <entry key="app/src/main/res/font/.xml" value="0.1175925925925926" />
+        <entry key="app/src/main/res/font/ubuntu.xml" value="0.1175925925925926" />
+        <entry key="app/src/main/res/font/ubuntu_medium.xml" value="0.1175925925925926" />
+        <entry key="app/src/main/res/layout/activity_about_order.xml" value="0.19384057971014493" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.20334320068359377" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.20334070178045738" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.23699396105780118" />
+        <entry key="app/src/main/res/layout/activity_orders.xml" value="0.19384057971014493" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.19384057971014493" />
+        <entry key="app/src/main/res/layout/activity_registration.xml" value="0.23919308357348704" />
+        <entry key="app/src/main/res/layout/activity_reserve.xml" value="0.19384057971014493" />
+        <entry key="app/src/main/res/layout/activity_table.xml" value="0.19384057971014493" />
+        <entry key="app/src/main/res/layout/activity_your_order_add_table.xml" value="0.19384057971014493" />
+        <entry key="app/src/main/res/layout/activity_your_order_done.xml" value="0.19384057971014493" />
+        <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.3098958333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
