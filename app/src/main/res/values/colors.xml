@@ -15,4 +15,5 @@
     <color name="table_reserve_time">#BFBFBF</color>
     <color name="active_order">#686868</color>
     <color name="bottom_navigation_color">#00071E</color>
+    <color name="choice">#FFC36A</color>
 </resources>

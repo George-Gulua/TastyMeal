@@ -12,7 +12,7 @@ public class UserRepository {
     private  User currentUser = null;
 
     public UserRepository () {
-        users.add(new User(1, "123456", "password1", "Marika"));
+        users.add(new User(1, "1", "p", "Marika"));
         users.add(new User(2, "login2", "password2", "Boris"));
         users.add(new User(3, "login3", "password3", "Carl"));
         users.add(new User(4, "login4", "password4", "Dexter"));
