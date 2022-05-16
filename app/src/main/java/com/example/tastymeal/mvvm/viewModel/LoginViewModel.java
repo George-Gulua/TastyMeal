@@ -34,4 +34,3 @@ public class LoginViewModel extends ViewModel {
         this.access.setValue(userRepo.setCurrentUser(login, password));
     }
 }
-

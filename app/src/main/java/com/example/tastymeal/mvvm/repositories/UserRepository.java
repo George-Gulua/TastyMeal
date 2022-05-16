@@ -17,6 +17,7 @@ public class UserRepository {
         users.add(new User(3, "login3", "password3", "Carl"));
         users.add(new User(4, "login4", "password4", "Dexter"));
         users.add(new User(5, "login5", "password5", "Eugen"));
+        users.add(new User(6, "", "", "Ma"));
     }
 
     public User getCurrentUser() {

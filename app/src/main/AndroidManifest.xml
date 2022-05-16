@@ -22,32 +22,21 @@
             android:name=".activities.TableActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.ReserveActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.OrdersActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.MenuActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.ProfileActivity"
-            android:exported="false" />
-        <activity
             android:name=".activities.RegistrationActivity"
             android:exported="false" />
         <activity
             android:name=".mvvm.views.LoginActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".mvvm.views.AppActivity" />
         <activity
             android:name=".ui.MainActivity"
-            android:exported="false"/>
+            android:exported="false" />
     </application>
 
 </manifest>
