@@ -144,7 +144,7 @@
         tools:ignore="SpeakableTextPresentCheck"
         android:autofillHints="" />
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_registration"
         android:layout_width="240dp"
         android:layout_height="75dp"
         android:backgroundTint="@color/black"

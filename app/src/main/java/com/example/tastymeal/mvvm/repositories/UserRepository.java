@@ -1,6 +1,13 @@
 package com.example.tastymeal.mvvm.repositories;
 
 
+import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
+
+import androidx.annotation.NonNull;
+
+import com.example.tastymeal.R;
 import com.example.tastymeal.mvvm.models.User;
 
 import java.util.ArrayList;
@@ -18,6 +25,12 @@ public class UserRepository {
         users.add(new User(4, "login4", "password4", "Dexter"));
         users.add(new User(5, "login5", "password5", "Eugen"));
         users.add(new User(6, "", "", "Ma"));
+    }
+    public void addUser(@NonNull View itemView) {
+        EditText text = (EditText)itemView.findViewById(R.id.editTextPhone);
+
+        String value = text.getText().toString();
+        Log.d("D", value);
     }
 
     public User getCurrentUser() {

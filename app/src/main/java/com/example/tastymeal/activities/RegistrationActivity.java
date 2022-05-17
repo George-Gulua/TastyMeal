@@ -3,6 +3,7 @@ package com.example.tastymeal.activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.tastymeal.R;
 
@@ -13,4 +14,5 @@ public class RegistrationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
     }
+
 }

@@ -1,10 +1,13 @@
 package com.example.tastymeal.mvvm.views;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.tastymeal.R;
 import com.example.tastymeal.fragments.MenuFragment;
@@ -14,7 +17,10 @@ import com.example.tastymeal.fragments.ProfileFragment;
 import com.example.tastymeal.fragments.ReserveFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.ArrayList;
+
 public class AppActivity extends AppCompatActivity {
+
     BottomNavigationView bottomNavigationView;
     MainFragment mainFragment = new MainFragment();
     MenuFragment menuFragment = new MenuFragment();
@@ -26,7 +32,6 @@ public class AppActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_main);
-
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         getSupportFragmentManager().beginTransaction().replace(R.id.body_container, new MainFragment()).commit();
 

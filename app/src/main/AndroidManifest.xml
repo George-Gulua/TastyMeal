@@ -10,18 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TastyMeal">
         <activity
-            android:name=".activities.YourOrderDoneActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.YourOrderAddTableActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.AboutOrderActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.TableActivity"
-            android:exported="false" />
-        <activity
             android:name=".activities.RegistrationActivity"
             android:exported="false" />
         <activity

@@ -1,5 +1,7 @@
 package com.example.tastymeal.mvvm.viewModel;
 
+import android.view.View;
+
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
@@ -32,5 +34,8 @@ public class LoginViewModel extends ViewModel {
 
     public void authorize (String login, String password) {
         this.access.setValue(userRepo.setCurrentUser(login, password));
+    }
+    public void addUser(View view) {
+        userRepo.addUser(view);
     }
 }
