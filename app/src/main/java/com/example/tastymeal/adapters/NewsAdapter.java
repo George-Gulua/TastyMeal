@@ -47,7 +47,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
         return data.size();
     }
 
-    class NewsViewHolder extends RecyclerView.ViewHolder {
+    static class NewsViewHolder extends RecyclerView.ViewHolder {
         ImageView img;
         TextView text, date;
         public NewsViewHolder(@NonNull View itemView) {
