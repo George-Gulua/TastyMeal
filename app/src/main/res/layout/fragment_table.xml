@@ -94,11 +94,12 @@
                                 android:layout_width="64dp"
                                 android:layout_height="25dp"
                                 android:layout_marginStart="1dp"
+                                android:onClick="timeClick"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_reserve_time" />
+                                app:srcCompat="@drawable/ic_reserve_time_choiced" />
 
                             <TextView
                                 android:id="@+id/textView7"
@@ -129,7 +130,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_reserve_time" />
+                                app:srcCompat="@drawable/time_selector_pressed" />
 
                             <TextView
                                 android:id="@+id/textView8"
@@ -158,7 +159,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_reserve_time" />
+                                app:srcCompat="@drawable/time_selector_pressed" />
 
                             <TextView
                                 android:id="@+id/textView6"
@@ -196,7 +197,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_reserve_time" />
+                                app:srcCompat="@drawable/time_selector_pressed" />
 
                             <TextView
                                 android:id="@+id/textView7"
@@ -227,7 +228,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_reserve_time" />
+                                app:srcCompat="@drawable/time_selector_pressed" />
 
                             <TextView
                                 android:id="@+id/textView8"
@@ -256,7 +257,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_reserve_time" />
+                                app:srcCompat="@drawable/time_selector_pressed" />
 
                             <TextView
                                 android:id="@+id/textView6"
@@ -294,7 +295,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_reserve_time" />
+                                app:srcCompat="@drawable/time_selector_pressed" />
 
                             <TextView
                                 android:id="@+id/textView7"
@@ -325,7 +326,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_reserve_time" />
+                                app:srcCompat="@drawable/time_selector_pressed" />
 
                             <TextView
                                 android:id="@+id/textView8"
@@ -354,7 +355,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                app:srcCompat="@drawable/ic_reserve_time" />
+                                app:srcCompat="@drawable/time_selector_pressed" />
 
                             <TextView
                                 android:id="@+id/textView6"
@@ -368,6 +369,7 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
+
                     </LinearLayout>
 
                 </LinearLayout>
@@ -400,17 +402,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.95"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_calendar" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
@@ -427,6 +418,25 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.026" />
+
+        <Button
+            android:id="@+id/button_registration"
+            android:layout_width="240dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/ubuntu"
+            android:text="Выбрать"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:cornerRadius="15dp"
+            android:onClick="timeSave"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.921" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

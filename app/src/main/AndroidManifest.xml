@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TastyMeal">
         <activity
-            android:name=".activities.RegistrationActivity"
+            android:name=".mvvm.views.RegistrationActivity"
             android:exported="false" />
         <activity
             android:name=".mvvm.views.LoginActivity"

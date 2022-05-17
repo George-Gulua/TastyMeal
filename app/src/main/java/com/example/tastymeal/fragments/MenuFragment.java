@@ -49,7 +49,7 @@ public class MenuFragment extends Fragment {
         newsViewModel.getCurrentName().observe(getViewLifecycleOwner(), nameObserver);
         GridLayoutManager gridLayoutManager=new GridLayoutManager(getContext(),1);
         rcv.setLayoutManager(gridLayoutManager);
-
         return view;
     }
+
 }

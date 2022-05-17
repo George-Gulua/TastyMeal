@@ -31,6 +31,7 @@
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout6"
         app:menu="@menu/bottom_navigation_menu"
@@ -44,7 +45,7 @@
         android:layout_marginTop="120dp"
         android:layout_marginEnd="1dp"
         android:background="@drawable/background_menu"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,6 +76,7 @@
 
             <ImageView
                 android:id="@+id/Cicle_1"
+                android:onClick="goTable"
                 android:layout_width="22dp"
                 android:layout_height="19dp"
                 android:contentDescription="@string/cicle"
@@ -124,6 +126,7 @@
                 android:id="@+id/Cicle_1"
                 android:layout_width="22dp"
                 android:layout_height="19dp"
+                android:onClick="goTable"
                 android:contentDescription="@string/cicle"
                 app:layout_constraintBottom_toBottomOf="@+id/table_1"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -168,6 +171,7 @@
             <ImageView
                 android:id="@+id/Cicle_1"
                 android:layout_width="22dp"
+                android:onClick="goTable"
                 android:layout_height="19dp"
                 android:contentDescription="@string/cicle"
                 app:layout_constraintBottom_toBottomOf="@+id/table_1"
@@ -213,6 +217,7 @@
                 android:id="@+id/Cicle_1"
                 android:layout_width="22dp"
                 android:layout_height="19dp"
+                android:onClick="goTable"
                 android:contentDescription="@string/cicle"
                 app:layout_constraintBottom_toBottomOf="@+id/table_1"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -325,6 +330,7 @@
                 android:id="@+id/Cicle_1"
                 android:layout_width="22dp"
                 android:layout_height="19dp"
+                android:onClick="goTable"
                 android:contentDescription="@string/cicle"
                 app:layout_constraintBottom_toBottomOf="@+id/table_1"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -370,6 +376,7 @@
                 android:id="@+id/Cicle_1"
                 android:layout_width="22dp"
                 android:layout_height="19dp"
+                android:onClick="goTable"
                 android:contentDescription="@string/cicle"
                 app:layout_constraintBottom_toBottomOf="@+id/table_1"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -415,6 +422,7 @@
                 android:id="@+id/Cicle_1"
                 android:layout_width="22dp"
                 android:layout_height="19dp"
+                android:onClick="goTable"
                 android:contentDescription="@string/cicle"
                 app:layout_constraintBottom_toBottomOf="@+id/table_1"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -458,6 +466,7 @@
 
             <ImageView
                 android:id="@+id/Cicle_1"
+                android:onClick="goTable"
                 android:layout_width="22dp"
                 android:layout_height="19dp"
                 android:contentDescription="@string/cicle"
@@ -499,9 +508,10 @@
                 app:srcCompat="@drawable/ic_small_table" />
 
             <ImageView
-                android:id="@+id/cicle_"
+                android:id="@+id/cicle_1"
                 android:layout_width="22dp"
                 android:layout_height="19dp"
+                android:onClick="goTable"
                 android:contentDescription="@string/cicle"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView6"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -541,9 +551,10 @@
                 app:srcCompat="@drawable/ic_small_table" />
 
             <ImageView
-                android:id="@+id/cicle_"
+                android:id="@+id/cicle_1"
                 android:layout_width="22dp"
                 android:layout_height="19dp"
+                android:onClick="goTable"
                 android:contentDescription="@string/cicle"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView6"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -588,6 +599,7 @@
                 android:id="@+id/Cicle_1"
                 android:layout_width="22dp"
                 android:layout_height="19dp"
+                android:onClick="goTable"
                 android:contentDescription="@string/cicle"
                 app:layout_constraintBottom_toBottomOf="@+id/table_1"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -633,6 +645,7 @@
                 android:id="@+id/Cicle_1"
                 android:layout_width="22dp"
                 android:layout_height="19dp"
+                android:onClick="goTable"
                 android:contentDescription="@string/cicle"
                 app:layout_constraintBottom_toBottomOf="@+id/table_1"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -678,6 +691,7 @@
                 android:id="@+id/Cicle_1"
                 android:layout_width="22dp"
                 android:layout_height="19dp"
+                android:onClick="goTable"
                 android:contentDescription="@string/cicle"
                 app:layout_constraintBottom_toBottomOf="@+id/table_1"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -723,6 +737,7 @@
                 android:id="@+id/Cicle_1"
                 android:layout_width="22dp"
                 android:layout_height="19dp"
+                android:onClick="goTable"
                 android:contentDescription="@string/cicle"
                 app:layout_constraintBottom_toBottomOf="@+id/table_1"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -754,7 +769,7 @@
             app:layout_constraintVertical_bias="0.915">
 
             <ImageView
-                android:id="@+id/table_1"
+                android:id="@+id/table_112"
                 android:layout_width="49dp"
                 android:layout_height="76dp"
                 android:contentDescription="@string/table"
@@ -765,24 +780,25 @@
                 app:srcCompat="@drawable/ic_big_table" />
 
             <ImageView
-                android:id="@+id/Cicle_1"
+                android:id="@+id/Circle_112"
                 android:layout_width="22dp"
                 android:layout_height="19dp"
+                android:onClick="goTable"
                 android:contentDescription="@string/cicle"
-                app:layout_constraintBottom_toBottomOf="@+id/table_1"
+                app:layout_constraintBottom_toBottomOf="@+id/table_112"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/table_1"
-                app:layout_constraintTop_toTopOf="@+id/table_1"
+                app:layout_constraintStart_toStartOf="@+id/table_112"
+                app:layout_constraintTop_toTopOf="@+id/table_112"
                 app:srcCompat="@drawable/ic_table_is_free" />
 
             <TextView
-                android:id="@+id/TextTable_1"
+                android:id="@+id/TextTable_112"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/table_1"
-                app:layout_constraintStart_toStartOf="@+id/table_1"
+                app:layout_constraintEnd_toEndOf="@+id/table_112"
+                app:layout_constraintStart_toStartOf="@+id/table_112"
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

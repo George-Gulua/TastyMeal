@@ -67,6 +67,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void reg(View view) {
-        setContentView(R.layout.activity_registration);
+        startActivity(new Intent(this, RegistrationActivity.class));
     }
 }

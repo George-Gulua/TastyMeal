@@ -1,8 +1,11 @@
 package com.example.tastymeal.mvvm.views;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +13,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.tastymeal.R;
+import com.example.tastymeal.fragments.AboutOrderFragment;
 import com.example.tastymeal.fragments.MenuFragment;
 import com.example.tastymeal.fragments.MainFragment;
 import com.example.tastymeal.fragments.OrdersFragment;
@@ -57,5 +61,43 @@ public class AppActivity extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction().replace(R.id.body_container, selectedFragment).commit();
             return true;
         });
+    }
+    public void basket(View view) {
+        setContentView(R.layout.fragment_your_order_add_table);
+    }
+    public void orderBack(View view) {
+        startActivity(new Intent(this, AppActivity.class));
+    }
+
+    public void addAboutOrder(View view) {
+        startActivity(new Intent(this, AppActivity.class));
+    }
+
+    public void logout(View view) {
+        startActivity(new Intent(this, LoginActivity.class));
+    }
+
+    public void goReserve(View view) {
+        startActivity(new Intent(this, AppActivity.class));
+    }
+
+    public void goTable(View view) {
+        setContentView(R.layout.fragment_table);
+    }
+
+    public void timeClick(View view) {
+
+    }
+
+    public void timeSave(View view) {
+        startActivity(new Intent(this, AppActivity.class));
+    }
+
+    public void back2(View view) {
+        startActivity(new Intent(this, AppActivity.class));
+    }
+
+    public void openAboutOrder(View view) {
+        setContentView(R.layout.fragment_about_order);
     }
 }

@@ -8,8 +8,8 @@ import androidx.lifecycle.ViewModel;
 import com.example.tastymeal.mvvm.repositories.UserRepository;
 
 
-public class LoginViewModel extends ViewModel {
 
+public class LoginViewModel extends ViewModel {
     private final UserRepository userRepo = new UserRepository();
 
     private final MutableLiveData<String> login = new MutableLiveData<>();
@@ -34,8 +34,5 @@ public class LoginViewModel extends ViewModel {
 
     public void authorize (String login, String password) {
         this.access.setValue(userRepo.setCurrentUser(login, password));
-    }
-    public void addUser(View view) {
-        userRepo.addUser(view);
     }
 }

@@ -24,6 +24,7 @@
         android:id="@+id/basket"
         android:layout_width="36dp"
         android:layout_height="36dp"
+        android:onClick="basket"
         android:contentDescription="@string/basket"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toStartOf="@+id/menu_1"
