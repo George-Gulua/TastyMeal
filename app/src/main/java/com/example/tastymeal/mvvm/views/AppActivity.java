@@ -104,8 +104,6 @@ public class AppActivity extends AppCompatActivity {
     public void openAboutOrder(View view) {
         setContentView(R.layout.fragment_about_order);
     }
-    ArrayList<com.example.tastymeal.models.Menu> holder;
-
 
     public void addToCart(View view) {
 
