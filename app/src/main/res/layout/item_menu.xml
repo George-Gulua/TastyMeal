@@ -48,6 +48,7 @@
                 android:layout_marginTop="10dp"
                 android:backgroundTint="#FFC36A"
                 android:text="500р"
+                android:onClick="addToCart"
                 android:textColor="@color/black"
                 app:cornerRadius="15dp" />
 

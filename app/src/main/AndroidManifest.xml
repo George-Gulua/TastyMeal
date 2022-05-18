@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TastyMeal">
         <activity
+            android:name=".mvvm.views.YoutOrderAddTableActivity"
+            android:exported="false" />
+        <activity
             android:name=".mvvm.views.RegistrationActivity"
             android:exported="false" />
         <activity

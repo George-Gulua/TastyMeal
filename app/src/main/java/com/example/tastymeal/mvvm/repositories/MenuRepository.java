@@ -13,16 +13,16 @@ public class MenuRepository {
     public MenuRepository() {
         holder = new ArrayList<>();
 
-        Menu n1 = new Menu(R.drawable.ic_burger, "Чизбугер", "500р");
+        Menu n1 = new Menu(0, R.drawable.ic_burger, "Чизбугер", "500р");
         holder.add(n1);
 
-        Menu n2 = new Menu(R.drawable.ic_burger, "Чизбугер!", "500р");
+        Menu n2 = new Menu(1,R.drawable.ic_burger, "123123!", "500р");
         holder.add(n2);
 
-        Menu n3 = new Menu(R.drawable.ic_burger, "Чизбугер!", "500р");
+        Menu n3 = new Menu(2,R.drawable.ic_burger, "Чизбугер!", "500р");
         holder.add(n3);
 
-        Menu n4 = new Menu(R.drawable.ic_burger, "Чизбугер!", "500р");
+        Menu n4 = new Menu(3,R.drawable.ic_burger, "Чизбугер!", "500р");
         holder.add(n4);
     }
 

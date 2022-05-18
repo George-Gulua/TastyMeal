@@ -40,6 +40,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
         holder.date.setText(data.get(position).getDate());
         holder.img.setImageResource(data.get(position).getImage());
 
+
     }
 
     @Override

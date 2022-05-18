@@ -1,14 +1,24 @@
 package com.example.tastymeal.models;
 
 public class Menu {
+    int id;
     int image;
     String text;
     String date;
 
-    public Menu(int image, String text, String date) {
+    public Menu(int id, int image, String text, String date) {
+        this.id = id;
         this.image = image;
         this.text = text;
         this.date = date;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getImage() {
