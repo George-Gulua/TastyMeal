@@ -78,7 +78,7 @@
         android:background="@drawable/rounded_edittext"
         android:fontFamily="@font/ubuntu"
         android:hint="Введите ваше имя"
-        android:inputType="textPassword"
+        android:inputType="text"
         android:minHeight="48dp"
         android:padding="10dp"
         android:textColorHint="#757575"

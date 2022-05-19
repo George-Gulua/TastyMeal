@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/about_order"
     android:background="@color/mainColor">
+
     <TextView
         android:id="@+id/textLogo"
         android:layout_width="wrap_content"
@@ -14,11 +15,12 @@
         android:text="@string/about_order"
         android:textColor="@color/black"
         android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069" />
+        app:layout_constraintVertical_bias="0.424" />
 
     <ImageView
         android:id="@+id/back"
@@ -28,19 +30,19 @@
         android:minWidth="48dp"
         android:minHeight="48dp"
         android:onClick="orderBack"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07"
+        app:layout_constraintVertical_bias="0.473"
         app:srcCompat="@drawable/ic_arrow_left_solid_1"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout4"
-        android:layout_width="409dp"
-        android:layout_height="620dp"
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
         android:layout_marginStart="1dp"
         android:layout_marginEnd="1dp"
         android:background="@drawable/background_menu"
@@ -69,7 +71,7 @@
         <TextView
             android:id="@+id/textView3"
             android:layout_width="200dp"
-            android:layout_height="92dp"
+            android:layout_height="100dp"
             android:fontFamily="@font/ubuntu"
             android:text="Состав заказа: \n\n2x Чизбургер 1000р\n\nИтого: 1000р"
             android:textColor="@color/black"
@@ -124,10 +126,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintHorizontal_bias="0.941"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.81" />
+        app:layout_constraintVertical_bias="0.967" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

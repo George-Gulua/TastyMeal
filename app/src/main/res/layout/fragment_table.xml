@@ -10,15 +10,16 @@
         android:id="@+id/textLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="18dp"
         android:fontFamily="@font/ubuntu"
         android:text="Столик №1"
         android:textColor="@color/black"
         android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.069" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/back"
@@ -28,17 +29,17 @@
         android:minWidth="48dp"
         android:minHeight="48dp"
         android:onClick="back2"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07"
         app:srcCompat="@drawable/ic_arrow_left_solid_1"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="409dp"
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
         android:layout_height="620dp"
         android:layout_marginStart="1dp"
         android:layout_marginEnd="1dp"
@@ -52,7 +53,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout2"
-            android:layout_width="360dp"
+            android:layout_width="340dp"
             android:layout_height="544dp"
             android:background="@drawable/table_time"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -94,12 +95,11 @@
             android:text="@string/Reserve_date"
             android:textColor="@color/black"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.081"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.026" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/button_registration"
@@ -107,12 +107,12 @@
             android:layout_height="75dp"
             android:backgroundTint="@color/black"
             android:fontFamily="@font/ubuntu"
+            android:onClick="timeSave"
             android:text="Выбрать"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="14sp"
             app:cornerRadius="15dp"
-            android:onClick="timeSave"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.491"

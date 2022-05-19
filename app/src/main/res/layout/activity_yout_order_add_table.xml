@@ -14,11 +14,11 @@
         android:text="@string/your_order"
         android:textColor="@color/black"
         android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout4"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.072" />
+        app:layout_constraintVertical_bias="0.292" />
 
     <ImageView
         android:id="@+id/back"
@@ -28,19 +28,19 @@
         android:minWidth="48dp"
         android:minHeight="48dp"
         android:onClick="back2"
-        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout4"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.073"
+        app:layout_constraintVertical_bias="0.315"
         app:srcCompat="@drawable/ic_arrow_left_solid_1"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout4"
-        android:layout_width="409dp"
-        android:layout_height="660dp"
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
         android:layout_marginStart="1dp"
         android:layout_marginEnd="1dp"
         android:background="@drawable/background_menu"
@@ -57,40 +57,22 @@
             android:layout_height="75dp"
             android:backgroundTint="@color/black"
             android:fontFamily="@font/ubuntu"
+            android:onClick="goReserve"
             android:text="@string/reserve"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="14sp"
-            android:onClick="goReserve"
             app:cornerRadius="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.866" />
-
-        <TextView
-            android:id="@+id/regist"
-            android:layout_width="190dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="464dp"
-            android:fontFamily="@font/ubuntu"
-            android:onClick="onClick"
-            android:text="Для оформления заказа вам нужно выбрать столик"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toTopOf="@+id/button_reserve"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.965"
-            tools:ignore="TouchTargetSizeCheck" />
+            app:layout_constraintVertical_bias="0.889" />
 
         <ListView
             android:id="@+id/orders_list"
-            android:layout_width="407dp"
+            android:layout_width="match_parent"
             android:layout_height="300dp"
             android:layout_marginStart="1dp"
             android:layout_marginTop="1dp"
@@ -102,6 +84,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/regist"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu"
+            android:onClick="onClick"
+            android:text="Для оформления заказа вам нужно выбрать столик"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/button_reserve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
