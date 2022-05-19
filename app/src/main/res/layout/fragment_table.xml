@@ -52,8 +52,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout2"
-            android:layout_width="355dp"
-            android:layout_height="353dp"
+            android:layout_width="360dp"
+            android:layout_height="544dp"
             android:background="@drawable/table_time"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -62,16 +62,19 @@
             app:layout_constraintVertical_bias="0.501">
 
             <ScrollView
-                android:layout_width="353dp"
-                android:layout_height="300dp"
+                android:id="@+id/scrollView2"
+                android:layout_width="343dp"
+                android:layout_height="152dp"
                 android:layout_marginStart="1dp"
                 android:layout_marginTop="1dp"
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.533"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.807">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -127,6 +130,7 @@
                                 android:layout_width="64dp"
                                 android:layout_height="25dp"
                                 android:layout_marginStart="1dp"
+                                android:onClick="timeClick"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -156,6 +160,7 @@
                                 android:layout_width="64dp"
                                 android:layout_height="25dp"
                                 android:layout_marginStart="1dp"
+                                android:onClick="timeClick"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -194,6 +199,7 @@
                                 android:layout_width="64dp"
                                 android:layout_height="25dp"
                                 android:layout_marginStart="1dp"
+                                android:onClick="timeClick"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -225,6 +231,7 @@
                                 android:layout_width="64dp"
                                 android:layout_height="25dp"
                                 android:layout_marginStart="1dp"
+                                android:onClick="timeClick"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -254,6 +261,7 @@
                                 android:layout_width="64dp"
                                 android:layout_height="25dp"
                                 android:layout_marginStart="1dp"
+                                android:onClick="timeClick"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -291,6 +299,7 @@
                                 android:id="@+id/imageView114"
                                 android:layout_width="64dp"
                                 android:layout_height="25dp"
+                                android:onClick="timeClick"
                                 android:layout_marginStart="1dp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
@@ -323,6 +332,7 @@
                                 android:layout_width="64dp"
                                 android:layout_height="25dp"
                                 android:layout_marginStart="1dp"
+                                android:onClick="timeClick"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -352,6 +362,7 @@
                                 android:layout_width="64dp"
                                 android:layout_height="25dp"
                                 android:layout_marginStart="1dp"
+                                android:onClick="timeClick"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -375,34 +386,19 @@
 
                 </LinearLayout>
             </ScrollView>
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout3"
-            android:layout_width="355dp"
-            android:layout_height="40dp"
-            android:background="@drawable/table_time"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.481"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.11">
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/ubuntu"
-                android:text="15.03.2022"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="317dp"
+                android:layout_height="297dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/scrollView2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.058"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView

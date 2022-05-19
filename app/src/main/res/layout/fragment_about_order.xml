@@ -51,40 +51,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="240dp"
-            android:layout_height="75dp"
-            android:backgroundTint="@color/black"
-            android:fontFamily="@font/ubuntu"
-            android:text="@string/Add"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            android:onClick="addAboutOrder"
-            app:cornerRadius="15dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.746" />
-
-        <TextView
-            android:id="@+id/regist"
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            android:fontFamily="@font/ubuntu"
-            android:text="Желаете ли вы добавить предварительный заказ?"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toTopOf="@+id/button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="TouchTargetSizeCheck" />
-
         <TextView
             android:id="@+id/textView10"
             android:layout_width="200dp"
@@ -138,8 +104,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ubuntu"
-        android:text="@string/active_order"
-        android:textColor="@color/active_order"
+        android:text="Успешно завершен"
+        android:textColor="#039912"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
         app:layout_constraintEnd_toEndOf="parent"

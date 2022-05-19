@@ -81,10 +81,6 @@ public class AppActivity extends AppCompatActivity {
         startActivity(new Intent(this, LoginActivity.class));
     }
 
-    public void goReserve(View view) {
-        startActivity(new Intent(this, AppActivity.class));
-    }
-
     public void goTable(View view) {
         setContentView(R.layout.fragment_table);
     }
@@ -94,7 +90,7 @@ public class AppActivity extends AppCompatActivity {
     }
 
     public void timeSave(View view) {
-        startActivity(new Intent(this, AppActivity.class));
+        setContentView(R.layout.fragment_your_order_done_reserve);
     }
 
     public void back2(View view) {
@@ -111,4 +107,17 @@ public class AppActivity extends AppCompatActivity {
         Order.items_id.add(item_id);
         Toast.makeText(this,"Добавлено", Toast.LENGTH_LONG).show();
     }
+
+    public void goSave(View view) {
+        Toast.makeText(this,"Данные сохранены", Toast.LENGTH_LONG).show();
+    }
+    public void goAddOrder(View view) {
+        startActivity(new Intent(this, AppActivity.class));
+        Toast.makeText(this,"Заказ успешно оформлен", Toast.LENGTH_LONG).show();
+    }
+
+    public void backOrderDone(View view) {
+        setContentView(R.layout.fragment_table);
+    }
+
 }

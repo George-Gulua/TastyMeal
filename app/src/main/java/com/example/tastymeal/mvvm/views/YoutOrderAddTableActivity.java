@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.tastymeal.R;
 import com.example.tastymeal.models.Menu;
@@ -40,5 +41,8 @@ public class YoutOrderAddTableActivity extends AppCompatActivity {
     public void back2(View view) {
         startActivity(new Intent(this, AppActivity.class));
     }
-
+    public void goReserve(View view) {
+        startActivity(new Intent(this, AppActivity.class));
+        Toast.makeText(this,"Пожалуйста, выберите столик", Toast.LENGTH_LONG).show();
+    }
 }
